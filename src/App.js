@@ -1,10 +1,14 @@
 import React from 'react';
+// import {DisplayMapClass} from "./components/DisplayMapClass";
+import {DisplayMapFC} from "./components/DisplayMapFC";
+
 
 function App() {
   return (
-    <div>
-      <h1>Proyecto Here</h1>
-    </div>
+    <>
+      {/*<DisplayMapClass/>*/}
+      <DisplayMapFC/>
+    </>
   );
 }
 
