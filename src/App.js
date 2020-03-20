@@ -1,14 +1,19 @@
 import React from 'react';
-// import {DisplayMapClass} from "./components/DisplayMapClass";
-import {DisplayMapFC} from "./components/DisplayMapFC";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import MapView from './components/MapView'
+
 
 
 function App() {
   return (
-    <>
-      {/*<DisplayMapClass/>*/}
-      <DisplayMapFC/>
-    </>
+    <Router>
+      <button className="navButton">
+        <Link to="/map">Map</Link>
+      </button>
+
+      <Route path="/map" component={MapView} />
+    </Router>
+
   );
 }
 
