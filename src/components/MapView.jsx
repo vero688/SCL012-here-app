@@ -1,18 +1,18 @@
-import React, { Fragment } from 'react';
-// import {DisplayMapClass} from "./DisplayMapClass";
-import {DisplayMapFC} from "./DisplayMapFC";
+// import React, { Fragment } from 'react';
+// // import {DisplayMapClass} from "./DisplayMapClass";
+// import {DisplayMapFC} from "./DisplayMapFC";
 
 
-const MapView = () => {
-    return ( 
-        <Fragment>
-            <>
-            {/*<DisplayMapClass/>*/}
-            <DisplayMapFC/>
-            </>
+// const MapView = () => {
+//     return ( 
+//         <Fragment>
+//             <>
+//             {/*<DisplayMapClass/>*/}
+//             <DisplayMapFC/>
+//             </>
 
-        </Fragment>
-     );
-}
+//         </Fragment>
+//      );
+// }
  
-export default MapView;
+// export default MapView;
