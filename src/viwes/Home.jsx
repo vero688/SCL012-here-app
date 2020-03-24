@@ -17,13 +17,13 @@ class Badges extends React.Component{
                 alt ="avatar" 
                 />
                 <div className="Badge__section-info">
-            <h1>Peludos Lugares
+            <h1>Pet Places
                 </h1></div>
   
                 <div>
-                   <a className="Badge__footer" href="/">
+                   <h2 className="Badge__footer">
                    <span >¿Vamos a dar un paseo?</span>
-                        </a> 
+                        </h2> 
                 </div>
                 </div>
                 </div>
