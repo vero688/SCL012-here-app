@@ -8,7 +8,7 @@ class Badges extends React.Component{
     return ( 
     <div className="Badge">
     <div className="Badge__header">
-    <img src={confLogo} alt="Logo de la imagen"/>
+    <img className="PostAv" src={confLogo} alt="Logo de la imagen"/>
         </div>         
         <div className="Badges__section-name">
                 <img 

@@ -16,11 +16,11 @@ handleSubmit = e=>{
     render() {
         return(
         <div >
-            <h1>New Attendant</h1>
+            <h1>Nuevo Usuario</h1>
 
         <form  onSubmit={this.handleSubmit}>
             <div className="form-group">
-            <label> First Name</label>
+            <label> Nombre</label>
         <input 
            onChange={this.props.onChange}
            className="form-control" 
@@ -31,7 +31,7 @@ handleSubmit = e=>{
         </div>
 
         <div className="form-group">
-            <label> Last Name </label>
+            <label> Apellido </label>
         <input
          onChange={this.props.onChange}
          className="form-control" 
