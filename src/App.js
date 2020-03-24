@@ -10,7 +10,7 @@
 // function App() {
 //   return (
 //     <Router>
-//       <Layout>
+//    
 //         <Navbar>
 //        <Route exact path="/" component={Badges}/>
 //        <Route path="/BadgetNew" component={BadgesNew}/>
@@ -19,7 +19,7 @@
 //       </button>
 //       <Route path="/map" component={MapView} />
 //        </Navbar>
-//       </Layout>
+//       
 //     </Router>
 
 //   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/New.css';
 import Navbar from'./Navbar';
-import Form from './Form';
+// import Form from './Form';
 import  Home from './Home';
 
 class New extends React.Component{
@@ -18,10 +18,11 @@ class New extends React.Component{
                   />
             </div>
             <div className="col-6">
-            <Form onChange={this.handleChange} />
+            {/* <Form onChange={this.handleChange} /> */}
             </div>
           </div>
         </div>
+        <Navbar/>
       </div>
     );
   }

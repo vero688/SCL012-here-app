@@ -10,13 +10,13 @@ class Badges extends React.Component{
     <div className="Badge__header">
     <img className="PostAv" src={confLogo} alt="Logo de la imagen"/>
         </div>         
-        <div className="Badges__section-name">
+        <div className="Badge__section-info">
                 <img 
                 className="Badge__avatar"
                 src={Log} 
                 alt ="avatar" 
                 />
-                <div className="Badge__section-info">
+                <div className="Badges__section-name">
             <h1>Pet Places
                 </h1></div>
   
