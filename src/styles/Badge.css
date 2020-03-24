@@ -12,6 +12,7 @@
     background: #1B1B25;
     display: flex;
     justify-content: center;
+    
   }
   
   .Badges__section-name {
@@ -42,6 +43,7 @@
   .Badge__footer {
     height: 54px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #98CA3F;

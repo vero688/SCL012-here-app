@@ -1,21 +1,11 @@
 import React from 'react';
 import '../styles/BadgeNew.css';
-import header from './imagen/log.jpeg';
+import header from './imagen/logo.jpeg';
 import Navbar from'../viwes/Navbar';
 import BadgeForm from '../viwes/BadgetForm';
 import  Badges from '../viwes/Badget';
 
 class BadgeNew extends React.Component{
-  state = { from: {} };
-
-  handleChange = e => {
-    this.setState({
-      form: {
-        ...this.state.form,
-        [e.target.name]: e.target.value,
-      }
-    });
-  };
   render(){
     return(
       <div>
