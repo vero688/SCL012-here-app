@@ -1,28 +1,15 @@
 import React from 'react';
 import '../styles/BadgeNew.css';
-import header from './imagen/log.jpeg';
 import Navbar from'../viwes/Navbar';
 import BadgeForm from '../viwes/BadgetForm';
 import  Badges from '../viwes/Badget';
 
 class BadgeNew extends React.Component{
-  state = { from: {} };
-
-  handleChange = e => {
-    this.setState({
-      form: {
-        ...this.state.form,
-        [e.target.name]: e.target.value,
-      }
-    });
-  };
   render(){
     return(
       <div>
         <Navbar/>
-        <div className="BadgeNew__hero">
-          <img className="img-fluid" src={header} alt="Logo"/>
-        </div>
+        <div className="BadgeNew__hero"></div>
         <div className="container">
           <div className="row">
             <div className="col-6">
