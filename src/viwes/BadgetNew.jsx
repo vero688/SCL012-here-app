@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/BadgeNew.css';
 import header from './imagen/log.jpeg';
-import Navbar from'../viwes/Navbar';
+import Navbar from '../viwes/Navbar';
 import BadgeForm from '../viwes/BadgetForm';
-import  Badges from '../viwes/Badget';
+import Badges from '../viwes/Badget';
 
-class BadgeNew extends React.Component{
+
+class BadgeNew extends React.Component {
   state = { from: {} };
 
   handleChange = e => {
@@ -16,22 +17,22 @@ class BadgeNew extends React.Component{
       }
     });
   };
-  render(){
-    return(
+  render() {
+    return (
       <div>
-        <Navbar/>
+        <Navbar />
         <div className="BadgeNew__hero">
-          <img className="img-fluid" src={header} alt="Logo"/>
+          <img className="img-fluid" src={header} alt="Logo" />
         </div>
         <div className="container">
           <div className="row">
             <div className="col-6">
               <Badges
-                  avatarUrl="https://vinti7.com/wp-content/uploads/2016/04/logos-de-perros-92.jpg"
-                  />
+                avatarUrl="https://vinti7.com/wp-content/uploads/2016/04/logos-de-perros-92.jpg"
+              />
             </div>
             <div className="col-6">
-            <BadgeForm onChange={this.handleChange} />
+              <BadgeForm onChange={this.handleChange} />
             </div>
           </div>
         </div>
