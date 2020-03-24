@@ -32,7 +32,3 @@ class Badges extends React.Component{
  }   
 }
 export default Badges; 
-
-
-
-

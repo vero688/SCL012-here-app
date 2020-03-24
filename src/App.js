@@ -10,18 +10,16 @@
 // function App() {
 //   return (
 //     <Router>
+//       <Layout>
 //         <Navbar>
-//           <Link to ="/" ><Badges/></Link>
-//           <Link to ="/BadgesNew"><BadgesNew/></Link>
-//        <Route exact path="/" component={BadgesNew}/>
-//        <Route path="/BadgetNew" component={Badges}/>
-//        <Route path="/BadgeForm" component={BadgeForm}/>
+//        <Route exact path="/" component={Badges}/>
+//        <Route path="/BadgetNew" component={BadgesNew}/>
 //        <button className="navButton">
 //         <Link to="/map">Map</Link>
 //       </button>
 //       <Route path="/map" component={MapView} />
 //        </Navbar>
-      
+//       </Layout>
 //     </Router>
 
 //   );
