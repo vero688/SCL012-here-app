@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Badge.css';
+import '../styles/Home.css';
 import confLogo from './imagen/LOGO.png';
 import Log  from './imagen/LOGO.png'
  
@@ -20,8 +20,10 @@ class Badges extends React.Component{
             <h1>Peludos Lugares
                 </h1></div>
   
-                <div className="Badge__footer">
-                   <div>¿Vamos a dar un paseo?</div> 
+                <div>
+                   <a className="Badge__footer" href="/">
+                   <span >¿Vamos a dar un paseo?</span>
+                        </a> 
                 </div>
                 </div>
                 </div>

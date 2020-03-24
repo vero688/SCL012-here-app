@@ -2,10 +2,10 @@
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import MapView from './components/MapView';
 // // import Layout from './viwes/Layout';
-// import Badges from './viwes/Badget';
+// import Home from './viwes/Home';
 // import Navbar from './viwes/Navbar';
-// import BadgesNew from './viwes/BadgetNew';
-// import BadgeForm from './viwes/BadgetForm';
+// import New from './viwes/NewPag';
+// import Form from './viwes/Form';
 
 // function App() {
 //   return (
