@@ -21,7 +21,7 @@
 
 //     const defaultLayers = platform.createDefaultLayers();
 //     const hMap = new H.Map(mapRef.current, defaultLayers.vector.normal.map, {
-//       center: { lat: 50, lng: 5 },
+//       center: { lat: 52, lng: 5 },
 //       zoom: 4,
 //       pixelRatio: window.devicePixelRatio || 1
 //     });
