@@ -27,10 +27,10 @@ function App() {
                             <Link to="/" className="nav-link">Home</Link>
                         </li>    
                         <li className="nav-item">
-                            <Link to="/map" className="nav-link">Mapa</Link>
+                            <Link to="/map" className="nav-links">Mapa</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/Form" className="nav-link">Login</Link>
+                            <Link to="/Form" className="nav-lin">Registrarse</Link>
                         </li>
                         </ul>
 

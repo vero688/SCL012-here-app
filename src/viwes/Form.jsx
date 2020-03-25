@@ -1,5 +1,6 @@
 import React from'react';
 import '../styles/Form.css';
+import Logs from './imagen/niña.png';
 
 
 class Form extends React.Component{
@@ -16,8 +17,9 @@ handleSubmit = e=>{
     render() {
         return(
         <div >
+            <div className="container">
+            <div className="col-6">
             <h1>Nuevo Usuario</h1>
-
         <form  onSubmit={this.handleSubmit}>
             <div className="form-group">
             <label> Nombre</label>
@@ -56,7 +58,15 @@ handleSubmit = e=>{
          className="btn btn-primary">Save</button>
         </form>
         </div>
+        <div className="Avatar">
+            <img className="Form-ava" 
+            src={Logs}
+            alt="avatar"/>
+        </div>
+        </div>
+        </div>
         );
+        
     }
 }
 export default Form;

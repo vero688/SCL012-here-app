@@ -1,9 +1,11 @@
+
 .Navbar {
   width: 100%;
-  padding: 0.5rem 0;
+  /* padding: 0.5rem 1; */
   background: url('../viwes/imagen/stars.svg'),#FDCB6E;
   background-color:#FDCB6E;
-  justify-content: flex-end
+  display: flex;
+
 }
 
 .Navbar__brand {
@@ -37,9 +39,7 @@ li.nav-item{
 ul.Lin-Home{
    display: flex;
 }
-a.nav-link{
-   list-style: none;
-}
+
 div.container-fluid{
   display: flex;
   color: rgb(7, 6, 6);
@@ -53,9 +53,39 @@ a.nav-link{
   align-items: center;
   font-weight: bold;
   margin-top: 20px;
-
+  list-style: none;
 
 }
 .nav-link{
   padding: .1rem 9rem;
 }
+
+a.nav-links{
+  color: rgb(0, 0, 0);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 28px;
+  list-style: none;
+  padding-left: 20%;
+
+}
+
+a.nav-lin{
+  color: rgb(0, 0, 0);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 28px;
+  list-style: none;
+  padding-left: 20%;
+}
+/* @media (min-width: 576px) and (max-width: 1199.98px) { 
+  .Navbar{
+    width: 25%;
+    padding: 0.5rem 1;
+
+  }
+ } */
