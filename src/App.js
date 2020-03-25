@@ -8,7 +8,7 @@ import NewPag from './viwes/NewPag'
 // import Home from './viwes/Home';
 // import Navbar from './viwes/Navbar';
 // import New from './viwes/NewPag';
-// import Form from './viwes/Form';
+import Form from './viwes/Form';
 
 function App() {
     return (
@@ -19,23 +19,27 @@ function App() {
 
                         <a className="Navbar__brand" href="https://mail.google.com/">
                             <img className="Navbar__brand-logo" src={logo} alt="logo" />
-                            <span className="font-weight-light">Peludos</span>
-                            <span className="font-weight-bold">Lugares</span>
-                            <div className="Links-Red"></div>
+                            <span className="font-weight-light">Pet</span>
+                            <span className="font-weight-bold">Places</span>
                         </a>
+                        <ul className="Lin-Home">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">Home</Link>
-                        </li>
-                        
+                        </li>    
                         <li className="nav-item">
                             <Link to="/map" className="nav-link">Mapa</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/Form" className="nav-link">Login</Link>
+                        </li>
+                        </ul>
 
                     </div>
                 </div>
 
                 <Route exact path="/" component={NewPag} />
                 <Route path="/map" component={MapView} />
+                <Route path="/Form" component={Form} />
 
             </Router>
         </Fragment>
