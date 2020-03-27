@@ -10,15 +10,16 @@ class Form extends React.Component{
      console.log('button was clicked');
     };
 handleSubmit = e=>{
- e.preventDefault();
  console.log("boton funciona");
  console.log(this.state);
 };
     render() {
         return(
+            
         <div >
+          
             <div className="container">
-            <div className="col-6">
+            <div className="col col-lg-6">
             <h1>Nuevo Usuario</h1>
         <form  onSubmit={this.handleSubmit}>
             <div className="form-group">
@@ -42,7 +43,7 @@ handleSubmit = e=>{
           value={this.state.lastName}
           />
         </div>
-      
+        
         <div className="form-group">
             <label> Email</label>
         <input onChange={this.props.onChange}
@@ -59,9 +60,10 @@ handleSubmit = e=>{
         </form>
         </div>
         <div className="Avatar">
-            <img className="Form-ava" 
+            <img className="img-fluid Form-ava" 
             src={Logs}
             alt="avatar"/>
+
         </div>
         </div>
         </div>
