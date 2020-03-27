@@ -2,8 +2,9 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './styles/Navbar.css';
 import logo from './viwes/imagen/logo.jpeg';
-import MapView from './components/MapView';
-import NewPag from './viwes/NewPag'
+// import MapView from './components/MapView';
+import NewPag from './viwes/NewPag';
+import LeafMap from './components/LeafMap';
 // import Layout from './viwes/Layout';
 // import Home from './viwes/Home';
 // import Navbar from './viwes/Navbar';
@@ -35,7 +36,7 @@ function App() {
                 </div>
 
                 <Route exact path="/" component={NewPag} />
-                <Route path="/map" component={MapView} />
+                <Route path="/map" component={LeafMap} />
 
             </Router>
         </Fragment>
