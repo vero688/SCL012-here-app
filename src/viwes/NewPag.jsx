@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/New.css';
-// import Navbar from './Navbar';
 import Home from './Home';
 
 class New extends React.Component {

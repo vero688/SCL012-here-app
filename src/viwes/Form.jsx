@@ -1,6 +1,7 @@
 import React from'react';
 import '../styles/Form.css';
 import Logs from './imagen/niña.png';
+// import Fireba from '../firebase/LoginFire';
 
 
 class Form extends React.Component{
@@ -10,13 +11,15 @@ class Form extends React.Component{
      console.log('button was clicked');
     };
 handleSubmit = e=>{
- e.preventDefault();
+ 
  console.log("boton funciona");
  console.log(this.state);
 };
     render() {
         return(
+            
         <div >
+          
             <div className="container">
             <div className="col-6">
             <h1>Nuevo Usuario</h1>
@@ -42,7 +45,7 @@ handleSubmit = e=>{
           value={this.state.lastName}
           />
         </div>
-      
+        {/* <Fireba> */}
         <div className="form-group">
             <label> Email</label>
         <input onChange={this.props.onChange}
@@ -52,7 +55,7 @@ handleSubmit = e=>{
           value={this.state.Email}
           />
         </div>
-
+        {/* </Fireba> */}
         <button  
         onClick={this.handleClick}
          className="btn btn-primary">Save</button>
@@ -62,7 +65,9 @@ handleSubmit = e=>{
             <img className="Form-ava" 
             src={Logs}
             alt="avatar"/>
+           
         </div>
+        
         </div>
         </div>
         );
