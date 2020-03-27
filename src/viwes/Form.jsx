@@ -3,7 +3,6 @@ import '../styles/Form.css';
 import Logs from './imagen/niña.png';
 
 
-
 class Form extends React.Component{
     state={};
     
@@ -64,7 +63,7 @@ handleSubmit = e=>{
             <img className="img-fluid Form-ava" 
             src={Logs}
             alt="avatar"/>
-           
+
         </div>
         </div>
         </div>

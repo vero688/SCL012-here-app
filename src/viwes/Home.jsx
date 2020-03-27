@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
 import Log  from './imagen/ISOTIPO.png';
+
  
 class Badges extends React.Component{
     render() {
