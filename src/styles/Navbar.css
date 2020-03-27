@@ -1,44 +1,16 @@
-
-.Navbar {
+.navbar {
   width: 100%;
-  /* padding: 0.5rem 1; */
-  background: url('../viwes/imagen/stars.svg'),#FDCB6E;
-  background-color:#FDCB6E;
-  display: flex;
-
-}
-
-.Navbar__brand {
-  color: rgb(8, 4, 4);
-  display: flex;
-  align-items: center;
-  opacity: 0.9;
- 
-  
-}
-
-.Navbar__brand:hover {
-  color: #0f0909;
-  text-decoration: none;
-  
-}
-
-.Navbar__brand-logo {
-  margin-right: 0.5rem;
-  border-radius: 50%;
-  margin-right: 1rem;
-  width: 60px;
-  height: 60px;
-  
+  background-color:#FDCA6E;
 }
 
 li.nav-item{
   list-style: none;
+}
 
+.Lin-Home {
+  display: flex;
 }
-ul.Lin-Home{
-   display: flex;
-}
+
 
 div.container-fluid{
   display: flex;
@@ -47,45 +19,19 @@ div.container-fluid{
 }
 
 a.nav-link{
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
+  font-family: 'Visby CF Medium';
+  font-size: 20px;
+  color: #2F3543;
   display: flex;
   align-items: center;
-  font-weight: bold;
   margin-top: 20px;
   list-style: none;
-
 }
+
 .nav-link{
   padding: .1rem 9rem;
 }
 
-a.nav-links{
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  margin-top: 28px;
-  list-style: none;
-  padding-left: 20%;
+@media all and (max-width: 480px) {
 
 }
-
-a.nav-lin{
-  color: rgb(0, 0, 0);
-  opacity: 0.9;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  margin-top: 28px;
-  list-style: none;
-  padding-left: 20%;
-}
-/* @media (min-width: 576px) and (max-width: 1199.98px) { 
-  .Navbar{
-    width: 25%;
-    padding: 0.5rem 1;
-
-  }
- } */

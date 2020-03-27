@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './styles/Navbar.css';
-import logo from './viwes/imagen/logo.jpeg';
 import LeafMap from './components/LeafMap';
 // import MapView from './components/MapView';
 import NewPag from './viwes/NewPag'
@@ -11,33 +10,34 @@ function App() {
     return (
         <Fragment>
             <Router>
-                <div className="Navbar">
-                    <div className="container-fluid flex-column flex-lg-row">
+                <div>
+                    <Route exact path="/" component={NewPag} />
+                    <Route path="/map" component={LeafMap} />
+                    <Route path="/Form" component={Form} />
 
-                        <a className="Navbar__brand" href="https://mail.google.com/">
-                            <img className="Navbar__brand-logo" src={logo} alt="logo" />
-                            <span className="font-weight-light">Pet</span>
-                            <span className="font-weight-bold">Places</span>
-                        </a>
-                        <ul className="Lin-Home">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">Home</Link>
-                        </li>    
-                        <li className="nav-item">
-                            <Link to="/map" className="nav-links">Mapa</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/Form" className="nav-lin">Registrarse</Link>
-                        </li>
-                        </ul>
+                    <footer className="footer">
+                    <div className="navbar navbar-fixed-bottom">
+                        <div className="container-fluid flex-column flex-lg-row">
 
+                            <ul className="Lin-Home">
+
+                                <li className="nav-item">
+                                    <Link to="/Form" className="nav-link">Iniciar Sesión</Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link to="/" className="nav-link">Home</Link>
+                                </li>
+                                
+                                <li className="nav-item">
+                                    <Link to="/map" className="nav-link">Mapa</Link>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
+                    </footer>
                 </div>
-
-                <Route exact path="/" component={NewPag} />
-                <Route path="/map" component={LeafMap} />
-                <Route path="/Form" component={Form} />
-
             </Router>
         </Fragment>
     );
