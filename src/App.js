@@ -11,7 +11,7 @@ function App() {
         <Fragment>
             <Router>
                 <div className="Navbar">
-                    <div className="container-fluid">
+                    <div className="container-fluid flex-column flex-lg-row">
 
                         <a className="Navbar__brand" href="https://mail.google.com/">
                             <img className="Navbar__brand-logo" src={logo} alt="logo" />
