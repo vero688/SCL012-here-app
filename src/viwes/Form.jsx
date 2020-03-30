@@ -1,13 +1,10 @@
 import React from'react';
 import '../styles/Form.css';
 import Logs from './imagen/niña.png';
-<<<<<<< HEAD
 import Fire from '../firebase/LoginFire';
 
 class Form extends React.Component {
     state = {};
-=======
->>>>>>> bc7138277698a64687140afd7a40596142598446
 
     handleClick = e => {
      console.log('email');
@@ -67,11 +64,7 @@ handleSubmit = e=>{
             <img className="img-fluid Form-ava" 
             src={Logs}
             alt="avatar"/>
-<<<<<<< HEAD
            
-=======
-
->>>>>>> bc7138277698a64687140afd7a40596142598446
         </div>
         </div>
         </div>
