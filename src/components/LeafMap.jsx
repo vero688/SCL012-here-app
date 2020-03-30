@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import MapContainer from './MapContainer'
+import Geolocalization from './Geolocalization'
 
 function LeafMap() {
 
@@ -14,8 +15,13 @@ function LeafMap() {
     const infoPetPlaces = await data.json()
     setLocals(infoPetPlaces)
   }
+  
+  const latlng = {
+    lat: -33.4190702,
+    lng: -70.6418162,
+  }
 
-  const center = [-33.4569397, -70.6482697];  // {lat, lng}
+  let center = latlng;  // {lat, lng}
   const zoom = 16;
 
   return (
@@ -26,6 +32,7 @@ function LeafMap() {
           zoom={zoom}
           locals={locals}
         />
+        <Geolocalization></Geolocalization>
       </div>
     </Fragment>
   );
