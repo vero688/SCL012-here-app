@@ -1,0 +1,23 @@
+[
+    {   
+        "key": "marker1",
+        "position": [-33.438194, -70.642138],
+        "content": "Wonderland Café"
+
+    },
+
+    {
+        "key": "marker2",
+        "position": [-33.4370183, -70.6436618],
+        "content": "Café da Lucia"
+
+    },
+
+    {
+        "key": "marker3",
+        "position": [-33.4374349, -70.6419652],
+        "content": "Colmado Coffee"
+
+    }
+    
+]
