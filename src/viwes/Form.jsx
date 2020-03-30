@@ -1,14 +1,14 @@
 import React from'react';
 import '../styles/Form.css';
 import Logs from './imagen/niña.png';
-
+import Fire from '../firebase/LoginFire';
 
 
 class Form extends React.Component{
     state={};
     
     handleClick = e => {
-     console.log('button was clicked');
+     console.log('email');
     };
 handleSubmit = e=>{
  console.log("boton funciona");
@@ -54,10 +54,11 @@ handleSubmit = e=>{
           value={this.state.Email}
           />
         </div>
-
+        <Fire>
         <button  
         onClick={this.handleClick}
          className="btn btn-primary">Save</button>
+        </Fire>
         </form>
         </div>
         <div className="Avatar">

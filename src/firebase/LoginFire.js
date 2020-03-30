@@ -9,9 +9,9 @@ this.login= this.login.bind(this);
 
     }
     state={};
-    
-    handleClick = e => {
-     console.log('button was clicked');
+    login = e => { 
+      
+     console.log('email,password');
     };
     login(email, password) {
       firebase.auth().signInWithEmailAndPassword(email, password)
@@ -46,17 +46,17 @@ this.login= this.login.bind(this);
     return(
       <div >
 <div className="form-group">
-            <label> Email</label>
-        <input onChange={this.props.onChange}
+            <label> Password</label>
+        <input onChange={this.props.login}
          className="form-control" 
-         type="email"
-          name="Email"
-          value={this.state.Email}
+         type="password"
+          value={this.Email}
           />
-        </div>
-        <button  
-        onClick={this.handleClick}
+        </div><div>
+        <button  type="button"
+        onClick={this.login}
          className="btn btn-primary">Save</button>
+         </div>
       </div>
     )
   }
