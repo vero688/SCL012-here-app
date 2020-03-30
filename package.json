@@ -7,8 +7,13 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "leaflet": "^1.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+<<<<<<< HEAD
+=======
+    "react-leaflet": "^2.6.3",
+>>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
     "react-firebase": "^2.2.8",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",

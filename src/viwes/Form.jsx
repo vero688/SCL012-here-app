@@ -3,10 +3,9 @@ import '../styles/Form.css';
 import Logs from './imagen/niña.png';
 import Fire from '../firebase/LoginFire';
 
+class Form extends React.Component {
+    state = {};
 
-class Form extends React.Component{
-    state={};
-    
     handleClick = e => {
      console.log('email');
     };

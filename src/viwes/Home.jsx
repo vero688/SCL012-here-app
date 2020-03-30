@@ -8,13 +8,13 @@ class Badges extends React.Component{
     <div className="Badge">
         <div className="Badge__section-info">
                 <img 
-                className="Badge__avatar"
-                src={Log} 
-                alt ="avatar" 
+                    className="Badge__avatar"
+                    src={Log} 
+                    alt="avatar" 
                 />
                 <div>
                    <h2 className="Badge__footer">
-                   <span >¿Vamos a dar un paseo?</span>
+                   <span>¿Vamos a dar un paseo?</span>
                         </h2> 
                 </div>
                 </div>

@@ -5,11 +5,10 @@
   background: #FDCB6E;
   display: flex;
   justify-content: center;
-  
 }
+
 .PostAv{
   width: 70px;
-  
 }
 
 .Badges__section-name {
@@ -17,7 +16,6 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
-  
 }
 
 .Badge__section-info {
@@ -26,25 +24,46 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
+<<<<<<< HEAD
   background: #F4F4F7;
+=======
+>>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
   margin-top: 90px;
 }
-
 
 .Badge__avatar {
    margin-right: 1rem;
    width: 300px;
+<<<<<<< HEAD
    height: 300px;
+=======
+   height: 420px;
+>>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
 }
 
 .Badge__footer {
+  font-family: 'Visby CF Medium';
+  font-weight: bold;
   height: 54px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #98CA3F;
+  color: #2F3543;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 480px) {
+  .Badge__avatar {
+    margin-right: 1rem;
+    width: 200px;
+    height: 280px;
+ }
+
+ .Badge__footer {
+  font-family: 'Visby CF Medium';
   font-weight: bold;
+<<<<<<< HEAD
   font-style: italic;
   margin-top: 40px;
 
@@ -53,3 +72,11 @@
 .span{
   padding-left: 45px;
 }
+=======
+  color: #2F3543;
+  font-size: 20px;
+}
+
+
+}
+>>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
