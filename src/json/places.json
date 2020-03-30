@@ -18,6 +18,56 @@
         "position": [-33.4374349, -70.6419652],
         "content": "Colmado Coffee"
 
+    },
+
+    {
+        "key": "marker4",
+        "position": [-33.4435671, -70.6147247],
+        "content": "Dachshund Coffee"
+
+    },
+
+    {
+        "key": "marker5",
+        "position": [-33.4401366, -70.6228782],
+        "content": "La Gata Horacia"
+
+    },
+
+    {
+        "key": "marker6",
+        "position": [-33.439117, -70.6064566],
+        "content": "Bar Valdivia"
+
+    },
+
+    {
+        "key": "marker7",
+        "position": [-33.4365653, -70.6082703],
+        "content": "Cafetería Naif"
+
+    },
+
+    {
+        "key": "marker8",
+        "position": [-33.4403529, -70.6273322],
+        "content": "Rice and Roll"
+
+    },
+
+    {
+        "key": "marker9",
+        "position": [-33.4469866, -70.625705],
+        "content": "Lusitano"
+
+    },
+
+    {
+        "key": "marker10",
+        "position": [-33.430936, -70.622553],
+        "content": "Kleine Kneipe"
+
     }
+
     
 ]
