@@ -30,7 +30,7 @@
     {
         "key": "marker5",
         "position": [-33.4401366, -70.6228782],
-        "content": "La Gata Horacia",
+        "content": "La Gata Horacia Café",
         "type": "cafe"
     },
 
@@ -51,21 +51,21 @@
     {
         "key": "marker8",
         "position": [-33.4403529, -70.6273322],
-        "content": "Rice and Roll",
+        "content": "Rice and Roll Restaurant",
         "type": "restaurante"
     },
 
     {
         "key": "marker9",
         "position": [-33.4469866, -70.625705],
-        "content": "Lusitano",
+        "content": "Lusitano Restaurante",
         "type": "restaurante"
     },
 
     {
         "key": "marker10",
         "position": [-33.430936, -70.622553],
-        "content": "Kleine Kneipe",
+        "content": "Bar Kleine Kneipe",
         "type": "bar"
     },
 
@@ -86,14 +86,14 @@
     {
         "key": "marker13",
         "position": [-33.4291956, -70.5926827],
-        "content": "Sabor de Buenos Aires",
+        "content": "Sabor de Buenos Aires Café",
         "type": "cafe"
     },
 
     {
         "key": "marker14",
         "position": [-33.4407509, -70.5920007],
-        "content": "Rende Bú",
+        "content": "Rende Bú Restaurante",
         "type": "restaurante"
     },
 
@@ -107,7 +107,7 @@
     {
         "key": "marker16",
         "position": [-33.4441337, -70.6255336],
-        "content": "El Camino",
+        "content": "El Camino Restaurante",
         "type": "restaurante"
     }
 
