@@ -24,21 +24,13 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
-<<<<<<< HEAD
-  background: #F4F4F7;
-=======
->>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
   margin-top: 90px;
 }
 
 .Badge__avatar {
    margin-right: 1rem;
    width: 300px;
-<<<<<<< HEAD
-   height: 300px;
-=======
    height: 420px;
->>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
 }
 
 .Badge__footer {
@@ -63,20 +55,7 @@
  .Badge__footer {
   font-family: 'Visby CF Medium';
   font-weight: bold;
-<<<<<<< HEAD
-  font-style: italic;
-  margin-top: 40px;
-
-  
-}
-.span{
-  padding-left: 45px;
-}
-=======
   color: #2F3543;
   font-size: 20px;
 }
-
-
 }
->>>>>>> d1e9c1757144a80c36c22e3f340cfee1e8cdbbc9
