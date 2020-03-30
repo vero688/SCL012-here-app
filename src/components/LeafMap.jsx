@@ -1,12 +1,19 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import MapContainer from './MapContainer'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-
 
 function LeafMap() {
 
   const [locals, setLocals] = useState([]);
 
+  useEffect(() => {
+    getData()
+  }, [])
+
+  const getData = async () => {
+    const data = await fetch('https://raw.githubusercontent.com/tamaramunoz/SCL012-here-app/developer/src/json/places.json')
+    const infoPetPlaces = await data.json()
+    setLocals(infoPetPlaces)
+  }
 
   const center = [-33.4569397, -70.6482697];  // {lat, lng}
   const zoom = 16;
@@ -17,16 +24,8 @@ function LeafMap() {
         <MapContainer
           center={center}
           zoom={zoom}
+          locals={locals}
         />
-
-        { locals.map(item => {
-          return (
-            <Marker position={item.position}>
-              <Popup>{item.content}</Popup>
-            </Marker>
-          )
-        })
-        }
       </div>
     </Fragment>
   );
