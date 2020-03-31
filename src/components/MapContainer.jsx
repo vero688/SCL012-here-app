@@ -10,7 +10,7 @@ const hereTileUrl = `https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newe
             <Map
                 center={props.center}
                 zoom={props.zoom} 
-
+                >
                 <TileLayer
                     attribution="&copy; Here 2019"
                     url={hereTileUrl}
