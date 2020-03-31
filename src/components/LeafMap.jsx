@@ -1,5 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import {Card} from '@material-ui/core'
 import MapContainer from './MapContainer'
+import IconBreadcrumbs from './breadCrumbs'
 import useGeolocation from 'react-hook-geolocation'
 
 function LeafMap() {
@@ -24,6 +26,7 @@ function LeafMap() {
 
   return (
     <Fragment>
+
       <div className="container-map">
         <MapContainer
           center={center}
@@ -31,6 +34,9 @@ function LeafMap() {
           locals={locals}
         />
       </div>
+      <Card>
+      <IconBreadcrumbs/>
+      </Card>
     </Fragment>
   );
 }
