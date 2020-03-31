@@ -1,8 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
-
-import MapContainer from './MapContainer';
-import Geolocalization from './Geolocalization';
-
+import MapContainer from './MapContainer'
+import Geolocalization from './Geolocalization'
 
 function LeafMap() {
 
@@ -25,20 +23,18 @@ function LeafMap() {
 
   let center = latlng;  // {lat, lng}
   const zoom = 16;
-  const viewport = true;
 
   return (
-      <Fragment>
-
+    <Fragment>
+      <div className="container-map">
         <MapContainer
           center={center}
           zoom={zoom}
           locals={locals}
-          viewport={viewport}
         />
-         <Geolocalization></Geolocalization>
-   
-      </Fragment>
+        <Geolocalization></Geolocalization>
+      </div>
+    </Fragment>
   );
 }
 
