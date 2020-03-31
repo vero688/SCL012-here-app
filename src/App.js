@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './styles/Navbar.css';
 import LeafMap from './components/LeafMap';
-// import MapView from './components/MapView';
 import NewPag from './viwes/NewPag'
 import Form from './viwes/Form';
 
