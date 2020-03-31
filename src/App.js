@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './styles/Navbar.css';
 import LeafMap from './components/LeafMap';
@@ -6,7 +6,10 @@ import LeafMap from './components/LeafMap';
 import NewPag from './viwes/NewPag'
 import Form from './viwes/Form';
 
+
 function App() {
+     
+      
     return (
         <Fragment>
             <Router>
