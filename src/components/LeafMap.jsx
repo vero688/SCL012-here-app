@@ -19,7 +19,6 @@ function LeafMap() {
   }
   
   const latlng = { lat: geolocation.latitude, lng: geolocation.longitude, }
-
   let center = latlng;  // {lat, lng}
   const zoom = 16;
 
