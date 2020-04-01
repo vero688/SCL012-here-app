@@ -1,9 +1,6 @@
 
 import React,{Fragment} from'react';
-
-import firebase from 'firebase/app';
-import 'firebase/auth';
-// import firebase from '../firebase/conFirebase';
+import firebase from '../firebase/conFirebase';
 import Map from '../components/LeafMap';
 import '../styles/Form.css';
 import Logs from './imagen/niña.png';
@@ -12,12 +9,12 @@ class Form extends React.Component {
     constructor(){
         super();
         this.state={
-            state:true,
+            estado:true,
             email:'',
             password:'',
             // le colocamos un estdo a nuestro metodos para que ejecuten con el evento 
         }
-
+      
     }
     // Evento que ejecuta el metodo del input
     handleEmail(event){
@@ -37,7 +34,7 @@ class Form extends React.Component {
         firebase.auth().signInWithEmailAndPassword(this.state.email,this.state.password)
         .then(()=>{
             this.setState(
-                {state:false})
+                {estado:false})
                 //si se inicia correctamente el estado de la funcion de login cambia 
         })
         .catch((error)=>{
@@ -51,12 +48,12 @@ alert(errorMessage);
 
     render() {
         //colocaremos una condicional para que se cumpla el evento y la funcion correspondiente que queremos ver 
-        if (this.state.state){
+        if (this.state.estado){
         return(
         
             <div className="container">
             <div className="col col-lg-6">
-            <h1>Nuevo Usuario</h1>
+            <h1>Ingresar</h1>
             <div className="form-group">
         <input 
            className="form-control" 
@@ -79,7 +76,11 @@ alert(errorMessage);
           />
         </div>  
         <button  
-        type="button" className="btn btn-outline-info lg" id="registrar" onClick={this.singInUser}>Ingresar</button>
+        type="button" 
+        className="btn btn-primar" 
+        id="registrar"
+         onClick={this.singInUser}>
+             Ingresar</button>
       
       
         </div>
@@ -96,7 +97,7 @@ alert(errorMessage);
     }
     return(
         <Fragment>
-            {this.state.state ? null : <Map/>}
+            {this.state.estado ? null : <Map/>}
         </Fragment>
     )
 }

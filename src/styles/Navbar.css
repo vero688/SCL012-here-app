@@ -29,6 +29,14 @@ a.nav-link{
 }
 
 .nav-link{
-  padding: .1rem 9rem;
+  padding: .1rem 10rem;
+}
+.footer{
+  height: 100vh;
+  position: fixed;
+  clear: both;
+  margin-top: 50px;
+  padding-top: 0px;
+
 }
 
