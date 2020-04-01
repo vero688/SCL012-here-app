@@ -7,7 +7,7 @@ import Link from '@material-ui/core/Link';
 
 import  PubIcon  from '../icons/pubIcon';
 import  CoffeIcon  from '../icons/cooffeIcon';
-import  RestoIcon  from '../icons/restoIcon'
+import  RestoIcon  from '../icons/restoIcon';
 
 
 const useStyles = makeStyles((theme: Theme) =>
