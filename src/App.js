@@ -7,7 +7,6 @@ import NewPag from './viwes/NewPag'
 import Form from './viwes/Form';
 
 
-
 function App() {
     return (
         <Fragment>

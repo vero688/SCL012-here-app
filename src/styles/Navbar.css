@@ -32,7 +32,7 @@ a.nav-link{
   padding: .1rem 10rem;
 }
 .footer{
-height: 150vh;
+  height: 100vh;
   position: fixed;
   clear: both;
   margin-top: 50px;
