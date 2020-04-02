@@ -1,4 +1,4 @@
-/* .container {
+.container {
     font-family: 'Visby CF Medium';
     margin-top: 40px;
     width: 100%;
@@ -14,9 +14,11 @@ img.img-fluid.Form-ava{
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
 @media (min-width:200px) and (max-width:800px){
-    .containerPer{
+  
+    .containerPer {
       display: inline-grid;
       margin-left: 17%;
       background-color: rgba(238, 244, 247, 0.473);
@@ -26,11 +28,13 @@ img.img-fluid.Form-ava{
     .logoSesion{
       margin-left: 11%
     }
+
     .h5{
       color: steelblue;
       text-align: center;
       margin-top: 12%;
     }
+    
     .contInput {
       margin-top:9%;
     }
@@ -43,17 +47,11 @@ img.img-fluid.Form-ava{
       margin-left: 13%;
       margin-top:1%;
     }
+
     #registrar{
       width: 48%;
       margin-top: 7%;
       margin-left: 25%;
     }
   }
-
-
-}
-.save{
-color: honeydew;
-
-}
 

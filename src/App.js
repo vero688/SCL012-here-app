@@ -24,14 +24,12 @@ function App() {
                     <ButtonGroup  variant="contained"  className="fixed-bottom">
                         <div className="container-fluid flex-xs-row">
 
-
                             <Button color="warning">
                                 <Link to="/Form" className="nav-link">Iniciar Sesión</Link>
                             </Button>
                             <Button color="warning" >
                                  <Link to="/" className="nav-link">Home</Link>
                             </Button >
-                          
                                              
                         </div>
                     </ButtonGroup >  
