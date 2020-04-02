@@ -1,78 +1,107 @@
-import React from 'react';
+
+import React,{Fragment} from'react';
+import firebase from '../firebase/conFirebase';
+import Map from '../components/LeafMap';
 import '../styles/Form.css';
 import Logs from './imagen/niña.png';
 import {Button} from '@material-ui/core'
 
+
 class Form extends React.Component {
-    state = {};
-
-    handleClick = e => {
-        console.log('button was clicked');
-    };
-    handleSubmit = e => {
-        console.log("boton funciona");
-        console.log(this.state);
-    };
-    render() {
-        return (
-            <div >
-                    
-                <div className="container">
-                    <div className="col col-lg-6">
-                 
-                       {/*<h1>Iniciar Sesión</h1>*/}
-            
-                        <form onSubmit={this.handleSubmit}>
-                            <div className="form-group">
-                                <label> Nombre</label>
-                                <input
-                                    onChange={this.props.onChange}
-                                    className="form-control"
-                                    type="text"
-                                    name="firstName"
-                                    value={this.state.firstName}
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label> Apellido </label>
-                                <input
-                                    onChange={this.props.onChange}
-                                    className="form-control"
-                                    type="text"
-                                    name="lastName"
-                                    value={this.state.lastName}
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label> Email</label>
-                                <input onChange={this.props.onChange}
-                                    className="form-control"
-                                    type="email"
-                                    name="Email"
-                                    value={this.state.Email}
-                                />
-                            </div>
-
-                            <Button
-                                variant="contained"
-                                href="/map"
-                                onClick={this.handleClick}
-                                >Save</Button>
-                        </form>
-                    </div>
-
-                </div>
-                <div className="Avatar">
-                        <img className="img-fluid Form-ava"
-                            src={Logs}
-                            alt="avatar" />
-
-                    </div>
-            </div>
-        );
+    constructor(){
+        super();
+        this.state={
+            estado:true,
+            email:'',
+            password:'',
+            // le colocamos un estdo a nuestro metodos para que ejecuten con el evento 
+        }
+      
+    }
+    // Evento que ejecuta el metodo del input
+    handleEmail(event){
+        this.setState(
+            {email:event.target.value});
+            console.log(this.state.email,'emailfunciona')
 
     }
+    //es evanto que guarda la contraseña que se introdusca en el metodo inpu
+    handlePassword(event){
+        this.setState(
+            {password:event.target.value});
+            console.log(this.state.email,'ingresando clave')
+    }
+    // funcion que inicia la secion de usuario
+    singInUser=()=>{
+        firebase.auth().signInWithEmailAndPassword(this.state.email,this.state.password)
+        .then(()=>{
+            this.setState(
+                {estado:false})
+                //si se inicia correctamente el estado de la funcion de login cambia 
+        })
+        .catch((error)=>{
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        console.log(errorCode);
+    console.log(errorMessage);
+alert(errorMessage);
+        });
+    };
+
+    render() {
+        //colocaremos una condicional para que se cumpla el evento y la funcion correspondiente que queremos ver 
+        if (this.state.estado){
+        return(
+        
+            <div className="container">
+            <div className="col col-lg-6">
+            <h1>Ingresar</h1>
+            <div className="form-group">
+        <input 
+           className="form-control" 
+           placeholder="Ingresar Correo"
+           type="text"
+           name="firstName"
+           onChange={this.props.handleEmail}
+           value={this.state.email}
+          />
+        </div>
+
+        <div className="form-group">
+        <input
+        className="form-control" 
+        placeholder="Ingresar Contraseña"
+        type="text"
+        name="firstName"
+        onChange={this.props.handlePassword}
+        value={this.state.password}
+          />
+        </div>  
+        <button  
+        type="button" 
+        className="btn btn-primar" 
+        id="registrar"
+         onClick={this.singInUser}>
+             Ingresar</button>
+      
+      
+        </div>
+        <div className="Avatar">
+            <img className="img-fluid Form-ava" 
+            src={Logs}
+            alt="avatar"/>
+           
+        </div>
+        </div>
+     
+        );
+        
+    }
+    return(
+        <Fragment>
+            {this.state.estado ? null : <Map/>}
+        </Fragment>
+    )
+}
 }
 export default Form;

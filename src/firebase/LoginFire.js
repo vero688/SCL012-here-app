@@ -1,70 +1,118 @@
-import React  from 'react';
-import firebase from './conFirebase';
+import React, {Fragment} from 'react';
+import logo from '../viwes/imagen/niña.png';
+import '../styles/Init.css';
+import firebase from '../firebase/conFirebase';
+import Form from '../viwes/Form';
 
 
-class Log extends React.Component{
-    constructor(props){
-super(props);
-this.login= this.login.bind(this);
-
+class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      estado: 'true',
+      name: '',
+      email: '',
+      password: ''
+      // al estado le colocamos que es verdadero con sus parametros 
     }
-    state={};
     
-    handleClick = e => {
-     console.log('button was clicked');
-    };
-    login(email, password) {
-      firebase.auth().signInWithEmailAndPassword(email, password)
-  
-          .catch(function (error) {
-              // Handle Errors here.
-              let errorCode = error.code;
-              let errorMessage = error.message;
-              alert('Debe Ingresar su correo electrónico y Contraseña')
-              // ...
-              console.log(errorCode);
-              console.log(errorMessage); 
-          });
   
   }
+  // los eventos de cada metodo se dara aca, para indicarle que debe buscar cada evento 
+  Name(event) {
+    this.setState({ name: event.target.value });
+    console.log(this.state.name, ' nombre')
+  }
+  Email(event) {
+    this.setState({ email: event.target.value });
+    console.log(this.state.email, 'email ')
+  }
+  Password(event) {
+    this.setState({ password: event.target.value });
+    console.log(this.state.password, 'password')
+  }
+  //nuevo usuario para la app//
+  singUpNewUser = (email, password, name) => {
 
-  
-  // Recuperación de contraseña
-   function () { // para invocar a la funcion de firebase
-      let auth = firebase.auth();
-      let emailAddress = document.getElementById('email').value; //para recuperar valor email
-      console.log("EMAIL:", emailAddress);
-      auth.sendPasswordResetEmail(emailAddress)//metodo para recuperacion de correo
-          .then(function () { //notificar cuando se envio el correo
-              alert('Se ha enviado un correo a tu cuenta. Porfavor sigue las intrucciones')
-  
-          }, function (error) { // funcion anonima para manejar errores
-              console.log(error)
-          })
-  }
-  render(){
-    return(
-      <div >
-<div className="form-group">
-            <label> Email</label>
-        <input onChange={this.props.onChange}
-         className="form-control" 
-         type="email"
-          name="Email"
-          value={this.state.Email}
-          />
+    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+     //firebase crea el nuevo usuario con email y password 
+      .then(() => {
+        this.setState({ estado:false });
+// 
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        if (errorCode === 'auth/weak-password') {
+          alert('error?.');
+        } else {
+          alert(errorMessage);
+        }
+        console.log(errorCode);
+        console.log(errorMessage);
+       
+      });
+  };
+  render() {
+      //le colocamos una condicion para que si el estado de es true muestre el evento del metodo 
+    if(this.state.estado){
+      return (
+        <div className="container2">
+            <h5>Registro de nuevo usuario</h5>
+          <div className="contin">
+          <input type="text" 
+          className="input" 
+          placeholder="Nombre de usuario"
+              value={this.state.name}
+               onChange={this.Name.bind(this)} 
+               />
+            <input 
+            type="text"
+             className="input" 
+             placeholder="Email"
+              value={this.state.email} 
+              onChange={this.Email.bind(this)} 
+              />
+            <input 
+            type="text" 
+            className="input" 
+            placeholder="Contraseña"
+              value={this.state.password}
+               onChange={this.Password.bind(this)} 
+               />
+          </div>
+            <button 
+            type="submit" 
+            className="btn btn-primar"
+             id="registrar" 
+              onClick={this.singUpNewUser}>
+                  Registrarme
+            </button>
+            <img
+            alt="logo"
+            src={logo}
+            className="logoE" />
         </div>
-        <button  
-        onClick={this.handleClick}
-         className="btn btn-primary">Save</button>
-      </div>
+      )
+    }
+    return (
+      <Fragment>
+        {this.state.estado? null:<Form/>}
+      </Fragment>
     )
   }
 }
-  
-    
 
-  export default Log;
+export default Login;
+
+
+
+
+
+
+
+
 
 
 

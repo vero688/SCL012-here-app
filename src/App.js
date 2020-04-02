@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './styles/Navbar.css';
 import './App.css'
@@ -6,9 +6,11 @@ import { ButtonGroup, Button} from '@material-ui/core'
 import LeafMap from './components/LeafMap';
 import NewPag from './viwes/NewPag'
 import Form from './viwes/Form';
-
+import LogIn from './firebase/LoginFire';
 
 function App() {
+     
+      
     return (
         <Fragment>
             <header className='header' ></header>
@@ -16,6 +18,7 @@ function App() {
                 <div>
                     <Route exact path="/" component={NewPag} />
                     <Route path="/map" component={LeafMap} />
+                    <Route path="/Form" component={LogIn} />
                     <Route path="/Form" component={Form} />
                      
                     <ButtonGroup  variant="contained"  className="fixed-bottom">
