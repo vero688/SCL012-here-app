@@ -1,30 +1,49 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-// import MapView from './components/MapView';
-// // import Layout from './viwes/Layout';
-// import Badges from './viwes/Badget';
-// import Navbar from './viwes/Navbar';
-// import BadgesNew from './viwes/BadgetNew';
-// import BadgeForm from './viwes/BadgetForm';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import './styles/Navbar.css';
+import './App.css'
+import { ButtonGroup, Button } from '@material-ui/core'
+import LeafMap from './components/LeafMap';
+import NewPag from './viwes/NewPag'
+import Form from './viwes/Form';
+import LogIn from './firebase/LoginFire';
 
-// function App() {
-//   return (
-//     <Router>
-//         <Navbar>
-//           <Link to ="/" ><Badges/></Link>
-//           <Link to ="/BadgesNew"><BadgesNew/></Link>
-//        <Route exact path="/" component={BadgesNew}/>
-//        <Route path="/BadgetNew" component={Badges}/>
-//        <Route path="/BadgeForm" component={BadgeForm}/>
-//        <button className="navButton">
-//         <Link to="/map">Map</Link>
-//       </button>
-//       <Route path="/map" component={MapView} />
-//        </Navbar>
-      
-//     </Router>
+function App() {
 
-//   );
-// }
+    return (
+        <Fragment>
+            <header className='header' ></header>
+            <Router>
+                <div>
+                    <Route exact path="/" component={NewPag} />
+                    <Route path="/map" component={LeafMap} />
+                    <Route path="/Login" component={LogIn} />
+                    <Route path="/Form" component={Form} />
 
-// export default App;
+                    <footer className="footer">
+
+                    
+                                <ButtonGroup variant="contained" className="fixed-bottom">
+                                <div className="container-fluid  flex-xs-row">
+
+                                    <Button color="warning">
+                                        <Link to="/Form" className="nav-link">Iniciar Sesión</Link>
+                                    </Button>
+
+                                    <Button colo="warning">
+                                        <Link to="/LogIn" className="nav-link">Registrame</Link>
+                                    </Button >
+
+                                    </div>
+                                </ButtonGroup >
+                            
+                   
+                    </footer>
+                </div>
+
+            </Router>
+        </Fragment>
+    );
+}
+
+export default App;

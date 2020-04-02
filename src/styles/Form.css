@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Visby CF Medium';
+    margin-top: 40px;
+    width: 100%;
+}
+
+.form-control {
+  background-color: #f4e3e3!important;
+}
+
+.sign-in {
+  text-align: center;
+  color: #2f3543;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  margin-top: 25px;
+  margin-left: 30%;
+}
+
+.avatar {
+  width: 50%;
+}
+
+button#registrar.btn.btn-primar{
+    width: 48%;
+    margin-left: 25%;
+    border-color: #2f3543;
+    color: #2f3543;
+}
+
+
+@media (min-width:200px) and (max-width:800px) {
+
+  .avatar-container {
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+
+  .avatar {
+    width: 75%;
+  }
+  
+
+
+}
+
