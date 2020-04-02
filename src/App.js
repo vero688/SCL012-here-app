@@ -18,22 +18,43 @@ function App() {
                 <div>
                     <Route exact path="/" component={NewPag} />
                     <Route path="/map" component={LeafMap} />
-                    <Route path="/Form" component={LogIn} />
+                    <Route path="/Login" component={LogIn} />
                     <Route path="/Form" component={Form} />
-                     
-                    <ButtonGroup  variant="contained"  className="fixed-bottom">
-                        <div className="container-fluid flex-xs-row">
+                 
+                    <footer className="footer">
+                    <div className="navbar navbar-fixed-bottom">
+                        <div className="container-fluid  flex-lg-row">
+{/* 
+                            <ul className="Lin-Home">
+
+                                <li className="nav-item">
+                                    <Link to="/" className="nav-link">Home</Link>
+                                </li>
+                                
+                                <li className="nav-item">
+                                    <Link to="/map" className="nav-link">Mapa</Link>
+                                </li>
+                                </ul> */}
+                                
+                             <ButtonGroup>
 
                             <Button color="warning">
                                 <Link to="/Form" className="nav-link">Iniciar Sesión</Link>
                             </Button>
+
+                            <Button colo="warning">
+                            <Link to="/LogIn" className="nav-link">Registrame</Link>
+                            </Button >
+
                             <Button color="warning" >
                                  <Link to="/" className="nav-link">Home</Link>
                             </Button >
-                                             
-                        </div>
-                    </ButtonGroup >  
+                            </ButtonGroup >                 
+                       </div>
+                       </div> 
+                       </footer>
                 </div>
+            
             </Router>
         </Fragment>
     );
