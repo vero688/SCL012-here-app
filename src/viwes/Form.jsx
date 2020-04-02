@@ -6,10 +6,10 @@ import '../styles/Form.css';
 import Logs from './imagen/niña.png';
 
 class Form extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
-            estado:true,
+            estado: 'true',
             email:'',
             password:'',
             // le colocamos un estdo a nuestro metodos para que ejecuten con el evento 
@@ -17,7 +17,7 @@ class Form extends React.Component {
       
     }
     // Evento que ejecuta el metodo del input
-    handleEmail(event){
+    handleEmai(event){
         this.setState(
             {email:event.target.value});
             console.log(this.state.email,'emailfunciona')
@@ -60,7 +60,7 @@ alert(errorMessage);
            placeholder="Ingresar Correo"
            type="text"
            name="firstName"
-           onChange={this.props.handleEmail}
+           onChange={this.handleEmai.bind(this)}
            value={this.state.email}
           />
         </div>
@@ -71,7 +71,7 @@ alert(errorMessage);
         placeholder="Ingresar Contraseña"
         type="text"
         name="firstName"
-        onChange={this.props.handlePassword}
+        onChange={this.handlePassword.bind(this)}
         value={this.state.password}
           />
         </div>  
@@ -80,6 +80,7 @@ alert(errorMessage);
         className="btn btn-primar" 
         id="registrar"
          onClick={this.singInUser}>
+
              Ingresar</button>
       
       

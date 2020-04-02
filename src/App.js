@@ -17,7 +17,7 @@ function App() {
                 <div>
                     <Route exact path="/" component={NewPag} />
                     <Route path="/map" component={LeafMap} />
-                    <Route path="/Form" component={LogIn} />
+                    <Route path="/Login" component={LogIn} />
                     <Route path="/Form" component={Form} />
                  
                     <footer className="footer">
@@ -27,7 +27,7 @@ function App() {
                             <ul className="Lin-Home">
 
                                 <li className="nav-item">
-                                    <Link to="/Form" className="nav-link">Registro</Link>
+                                    <Link to="/LogIn" className="nav-link">Registrame</Link>
                                 </li>
 
                                 <li className="nav-item">

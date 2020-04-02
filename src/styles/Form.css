@@ -1,4 +1,4 @@
-/* .container {
+.container {
     font-family: 'Visby CF Medium';
     margin-top: 40px;
     width: 100%;
@@ -15,7 +15,7 @@ img.img-fluid.Form-ava{
     align-items: center;
     justify-content: center;
 
-} */
+}
 
 @media (min-width:200px) and (max-width:800px){
     .containerPer{
