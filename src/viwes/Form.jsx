@@ -1,4 +1,3 @@
-
 import React,{Fragment} from'react';
 import firebase from '../firebase/conFirebase';
 import Map from '../components/LeafMap';
