@@ -4,6 +4,8 @@ import firebase from '../firebase/conFirebase';
 import Map from '../components/LeafMap';
 import '../styles/Form.css';
 import Logs from './imagen/niña.png';
+import {Button} from '@material-ui/core'
+
 
 class Form extends React.Component {
     constructor(){

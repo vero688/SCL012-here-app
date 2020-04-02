@@ -15,8 +15,6 @@ img.img-fluid.Form-ava{
     align-items: center;
     justify-content: center;
 
-} */
-
 @media (min-width:200px) and (max-width:800px){
     .containerPer{
       display: inline-grid;
@@ -51,3 +49,11 @@ img.img-fluid.Form-ava{
       margin-left: 25%;
     }
   }
+
+
+}
+.save{
+color: honeydew;
+
+}
+
