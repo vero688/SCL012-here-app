@@ -38,7 +38,7 @@ function LeafMap() {
         />
 
         <div className="container-medio">
-          <h2>¿A dónde vamos?</h2>
+          <h2 className="where-go">¿A dónde vamos?</h2>
         </div>
 
         <div className="container-options">

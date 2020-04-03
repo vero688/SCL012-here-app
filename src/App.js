@@ -17,30 +17,26 @@ function App() {
                 <div>
                     <Route exact path="/" component={NewPag} />
                     <Route path="/map" component={LeafMap} />
-                    <Route path="/Login" component={LogIn} />
-                    <Route path="/Form" component={Form} />
+                    <Route path="/login" component={LogIn} />
+                    <Route path="/form" component={Form} />
 
                     <footer className="footer">
 
-                    
-                                <ButtonGroup variant="contained" className="fixed-bottom">
-                                <div className="container-fluid  flex-xs-row">
+                        <ButtonGroup variant="contained" className="fixed-bottom">
+                            <div className="container-fluid  flex-xs-row">
 
-                                    <Button color="warning">
-                                        <Link to="/Form" className="nav-link">Iniciar Sesión</Link>
-                                    </Button>
+                                <Button color="warning">
+                                    <Link to="/form" className="nav-link">Iniciar Sesión</Link>
+                                </Button>
 
-                                    <Button colo="warning">
-                                        <Link to="/LogIn" className="nav-link">Registrame</Link>
-                                    </Button >
+                                <Button colo="warning">
+                                    <Link to="/login" className="nav-link">Registrarse</Link>
+                                </Button >
 
-                                    </div>
-                                </ButtonGroup >
-                            
-                   
+                            </div>
+                        </ButtonGroup >
                     </footer>
                 </div>
-
             </Router>
         </Fragment>
     );

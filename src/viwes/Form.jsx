@@ -91,9 +91,7 @@ class Form extends React.Component {
                         />
                     </div>
                 </div>
-
             );
-
         }
         return (
             <Fragment>

@@ -76,7 +76,7 @@ class Login extends React.Component {
               onChange={this.Email.bind(this)}
             />
             <input
-              type="text"
+              type="password"
               className="form-control input"
               placeholder="Contraseña"
               value={this.state.password}
