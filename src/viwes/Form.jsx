@@ -74,15 +74,15 @@ alert(errorMessage);
         value={this.state.password}
           />
         </div>  
+        
         <button  
         type="button" 
         className="btn btn-primar" 
         id="registrar"
          onClick={this.singInUser}>
-
-             Ingresar</button>
-      
-      
+             Ingresar
+             </button>
+            
         </div>
         <div className="Avatar">
             <img className="img-fluid Form-ava" 

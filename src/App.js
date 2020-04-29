@@ -24,17 +24,8 @@ function App() {
                     <footer className="footer">
                     <div className="navbar navbar-fixed-bottom">
                         <div className="container-fluid  flex-lg-row">
-{/* 
-                            <ul className="Lin-Home">
 
-                                <li className="nav-item">
-                                    <Link to="/" className="nav-link">Home</Link>
-                                </li>
-                                
-                                <li className="nav-item">
-                                    <Link to="/map" className="nav-link">Mapa</Link>
-                                </li>
-                                </ul> */}
+                        
                                 
                              <ButtonGroup>
 
