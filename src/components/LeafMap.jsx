@@ -38,14 +38,14 @@ function LeafMap() {
         />
 
         <div className="container-medio">
-          <h2>a donde vamos?</h2>
+          <h2>¿A dónde vamos?</h2>
         </div>
 
         <div className="container-options">
           <IconBreadcrumbs />
         </div>
         <div className='container-medio'>
-          <Button color='inherit' variant='contained'>buscar lugares cercanos</Button>
+          <Button color='inherit' variant='contained'>Buscar lugares cercanos</Button>
         </div>
 
       </div>
