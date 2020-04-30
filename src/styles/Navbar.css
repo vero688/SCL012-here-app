@@ -11,10 +11,8 @@ li.nav-item{
   display: flex;
 }
 
-
 div.container-fluid{
   display: flex;
-
   align-items: center;
   justify-content: space-around;
   background-color:#FDCA6E;
@@ -22,17 +20,14 @@ div.container-fluid{
 
 a.nav-link{
   font-family: 'Visby CF Medium';
-  font-size: 20px;
-  color: rgb(32, 27, 27);
+  font-size: 16px;
   display: flex;
   align-items: center;
-
   list-style: none;
 }
 
 .nav-link{
-  padding: .1rem 10rem;
   display: flex;
-
+  color: #2f3543;
 }
 

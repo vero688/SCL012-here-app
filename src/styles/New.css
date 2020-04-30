@@ -13,9 +13,8 @@
    width: 60px;
   height: 60px;
 }
+
 .container-options{
-
-
   margin-left: 70px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -30,6 +29,10 @@
   align-items: center;
   color: gray;
   font-family: 'Visby CF Medium';
-align-content: center;
+  align-content: center;
+}
 
+.where-go {
+  margin-top: 20px;
+  font-size: 22px;
 }

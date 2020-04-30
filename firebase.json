@@ -1,4 +1,5 @@
 {
+
   "database": {
     "rules": "database.rules.json"
   },
@@ -11,9 +12,8 @@
       "npm --prefix \"$RESOURCE_DIR\" run lint"
     ],
     "source": "functions"
-<<<<<<< HEAD
-=======
   },
+
   "hosting": {
     "public": "build",
     "ignore": [
@@ -27,6 +27,7 @@
         "destination": "/index.html"
       }
     ]
->>>>>>> 6a3ee35ae48d2a48b96284c1b0bdc75a0d5fa145
+
+
   }
 }

@@ -54,6 +54,7 @@
 [0401/104821.859:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0401/105024.540:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0401/114053.419:ERROR:crash_report_database_win.cc(469)] failed to stat report
+<<<<<<< HEAD
 [0401/120403.475:ERROR:crash_report_database_win.cc(469)] failed to stat report
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,3 +67,7 @@
 =======
 
 >>>>>>> 5aeb50f4b68e0d52586ea38ae1dd8c03d9ff931d
+=======
+[0401/120403.475:ERROR:crash_report_database_win.cc(469)] failed to stat report
+>>>>>>> f8797cd47296cad4739f3cbcc26a4402619bc2dc
+[0429/234438.561:ERROR:crash_report_database_win.cc(469)] failed to stat report

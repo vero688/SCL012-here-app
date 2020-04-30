@@ -18,7 +18,7 @@ function LeafMap() {
   }, [])
 
   const getData = async () => {
-    const data = await fetch('https://raw.githubusercontent.com/tamaramunoz/SCL012-here-app/developer/src/json/places.json')
+    const data = await fetch('https://raw.githubusercontent.com/tamaramunoz/SCL012-here-app/master/src/json/places.json')
     const infoPetPlaces = await data.json()
     setLocals(infoPetPlaces)
   }
@@ -38,7 +38,7 @@ function LeafMap() {
         />
 
         <div className="container-medio">
-          <h2>¿A dónde vamos?</h2>
+          <h2 className="where-go">¿A dónde vamos?</h2>
         </div>
 
         <div className="container-options">

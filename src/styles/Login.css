@@ -1,40 +1,59 @@
-.container2{
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Visby CF Medium';
   margin-top: 40px;
-  width: 300px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-input.form-control.input{
-  display: block;
-  height: calc(1.5em + .75rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-
+  width: 100%;
 }
 
-.logoE{
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-register {
+display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-color: #2f3543;
+    color: #2f3543;
+}
+
+.avatar-register-container {
+  margin-top: 25px;
   margin-left: 30%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+  margin-bottom: 30px;
 }
 
-.h5{
-  text-align: center;
-  margin-bottom: .5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-left: 15%;
+.avatar-register {
+  width: 40%;
 }
+
+
+@media (min-width:200px) and (max-width:800px) {
+
+  .avatar-register-container {
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+
+  .avatar-register {
+    width: 75%;
+  }
+
+
+}
+  
